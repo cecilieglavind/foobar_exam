@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    
+    <!-- Loading Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
+
+
+    <!-- Loading font-awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div id="dashboard_container">
+
+            <div class="burger-menu burger-menu--closed">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+            </div>
+
+            <div id="menu_info" class="hide">
+                            <div class="menu_profile"><img src="img/boss.jpg"></div>
+                            
+                            <div class="menu_text_wrapper">
+                                <ul>
+                                    <li><a href="#" class="active"><i class="fas fa-cubes"></i>Dashboard</a></li>
+                                    <li><a href="#"><i class="far fa-chart-bar"></i>Statistics</a></li>
+                                    <li><a href="#"><i class="fas fa-database"></i>Database</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i>Calendar</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i>Messages</a></li>
+                                    <li><a href="#"><i class="fas fa-cogs"></i>Settings</a></li>
+                                </ul>
+                            </div>
+
+                            <a href="index.html"><div class="log_out"><i class="fas fa-sign-out-alt"></i>Log out</div></a>
+            </div>
+
+            <div class="top_nav">
+
+                <div class="indhold_nav_top">Dashboard</div>
+
+                <div class="logo"><b>Closing In <span class="time_stamp">8</span><span class="minuts"> 50</span></b></div>
+
+                <!-- <div class="time_stamp"></div> -->
+
+                                    <div id="dashboard_wrapper">
+                                        
+                                                    <div class="que_grid_wrapper"> <div class="que">People in Que</div>
+                                                         <div id="que_reciever">
+                                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                    viewBox="0 0 200 58" style="enable-background:new 0 0 200 58;" xml:space="preserve">
+                                                                <style type="text/css">
+                                                                    .st0{fill:#AFAFAF;}
+                                                                    .st1{font-family:'OpenSans-Regular';}
+                                                                    .st2{font-size:5px;}
+                                                                    .st3{fill:none;stroke:#AFAFAF;stroke-width:0.25;stroke-miterlimit:10;}
+                                                                </style>
+                                                                <text transform="matrix(1 0 0 1 5.1108 7.5918)" class="st0 st1 st2">25</text>
+                                                                <text transform="matrix(1 0 0 1 5.1108 16.6988)" class="st0 st1 st2">20</text>
+                                                                <text transform="matrix(1 0 0 1 5.1108 25.8049)" class="st0 st1 st2">15</text>
+                                                                <text transform="matrix(1 0 0 1 5.1108 34.9119)" class="st0 st1 st2">10</text>
+                                                                <text transform="matrix(1 0 0 1 6.5405 44.0189)" class="st0 st1 st2">5</text>
+                                                                <text transform="matrix(1 0 0 1 6.5405 53.1255)" class="st0 st1 st2">0</text>
+                                                                <line class="st3" x1="14" y1="6.7" x2="193" y2="6.7"/>
+                                                                <line class="st3" x1="14" y1="15.8" x2="193" y2="15.8"/>
+                                                                <line class="st3" x1="14" y1="24.8" x2="193" y2="24.8"/>
+                                                                <line class="st3" x1="14" y1="33.9" x2="193" y2="33.9"/>
+                                                                <line class="st3" x1="14" y1="42.9" x2="193" y2="42.9"/>
+                                                                <line class="st3" x1="14" y1="52" x2="193" y2="52"/>
+                                                                <polyline points="15,30" fill="none" stroke="#f09819" />
+                                                                </svg>
+                                                         </div>
+                                                    </div>
+
+                                                    <div class="box"> <div class="medarbejdere">Crew</div>
+                                                            <div id="bartender_reciever"></div>
+                                                    </div> 
+                                                    
+                                                    <div class=""> <div class="orders">Serving</div>
+                                                            <div id="customerOrder_reciever"></div>
+                                                    </div>
+
+                                                    <div class="tabs_grid_wrapper"> <div class="tabs">Tabs</div> 
+                                                        <!-- <div class="bar_wrapper">
+                                                            <div class="bar">
+                                                                <div class="bar_indhold"></div>
+                                                            </div>
+                                                        </div> -->
+                                                        <div id="tabs_reciever"></div>
+                                                    </div>
+
+                                                    <div class="beer_grid_wrapper">
+                                                            <div class="beer_heading">Beer Information</div>
+                                                            <div id="beerInfo_reciever"></div>                                                            
+                                                     </div>
+
+                                                     <div class="message_grid_wrapper">
+                                                            <div class="beer_heading">Messages</div>
+                                                            
+                                                            <div class="message_wrapper">
+                                                            <div class="message_box">
+                                                               
+                                                                    <div class="delete" style="font-family: 'Bowlby One', cursive; position: absolute; margin: 10px;">X</div>
+                                                                
+                                                                <div class="crew_img">
+                                                                    <img src="img/marie.jpg">
+                                                                    <p>Marie</p>
+                                                                </div>
+
+                                                                <div class="message_wrap">
+                                                                <h2>Running late</h2>
+                                                                <p>Meeting at 10 o'clock in Brøndby, so i will be late tomorrow!</p>
+                                                                <div class="read_more">Read More</div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="message_box">
+                                                                    <div class="delete" style="font-family: 'Bowlby One', cursive; position: absolute; margin: 10px;">X</div>
+                                                                    <div class="crew_img">
+                                                                        <img src="img/martin.jpg">
+                                                                        <p>Martin</p>
+                                                                    </div>
+    
+                                                                    <div class="message_wrap">
+                                                                    <h2>Amazing Friday</h2>
+                                                                    <p>Thank u all for last friday, it was amazing! </p>
+                                                                    <div class="read_more">Read More</div>
+                                                                    </div>
+    
+                                                                </div>
+
+                                                                <div class="message_box">
+                                                                        <div class="delete" style="font-family: 'Bowlby One', cursive; position: absolute; margin: 10px;">X</div>
+                                                                        <div class="crew_img">
+                                                                            <img src="img/peter.jpg">
+                                                                            <p>Peter</p>
+                                                                        </div>
+        
+                                                                        <div class="message_wrap">
+                                                                        <h2>New Record!!</h2>
+                                                                        <p>We have archived a new record, FooBar can run for 6 hours with no error!</p>
+                                                                        <div class="read_more">Read More</div>
+                                                                    </div>
+        
+                                                                    </div>
+
+                                                                    <div class="message_box">
+                                                                            <div class="delete" style="font-family: 'Bowlby One', cursive; position: absolute; margin: 10px;">X</div>
+                                                                            <div class="crew_img">
+                                                                                <img src="img/jonas.jpg">
+                                                                                <p>Jonas</p>
+                                                                            </div>
+            
+                                                                            <div class="message_wrap">
+                                                                            <h2>I got this idea..</h2>
+                                                                            <p>How about a whole new beer combination, that take the top 3 best beers and put it together.</p>
+                                                                            <div class="read_more">Read More</div>
+                                                                            </div> 
+                                                                        </div>
+                                                                        </div>
+                                                            
+                                                     </div>
+
+                                                    <div class="storage_grid_wrapper">
+                                                        <div class="orders">Storage</div>
+                                                            <div id="storage_reciever"></div>
+
+
+
+                                                             <!-- MODAL ORDER - ANIMATION -->
+                                                                <div class="modal_order_kegs hide">
+                                                                    
+                                                                    <h2>YOU HAVE PLACED AN NEW ORDER</h2>
+
+                                                                    <div class="step-indicator">
+                                                                            <a class="step completed" href="#">Selecting</a>
+                                                                            <a class="step completed" href="#">Order </a>
+                                                                            <a class="step" href="#">Approved</a>
+                                                                        </div>
+
+                                                                        <div class="close"> CLOSE </div>
+                                                                </div>
+
+                                                    </div>
+                                                    
+
+                                    </div>
+    </div>
+
+    </div>
+
+        <!-- TEMPLATES FOR MY CODE -->
+        <template id="bartender_template">
+            <div class="person_wrapper">
+                
+                <div class="person_img"><img src=""></div>
+                
+                <div class="info">
+                    <h2 class="person_name"></h2>
+                    
+                    <div class="status">
+                        <div class="prik_status"></div>
+                        <p class="status_text"></p>
+                    </div>
+                </div>
+
+            </div>
+        </template>
+
+
+        <template id="order_template">
+                <div class="order_wrapper">
+                        <div class="color_order"></div>                            
+                        <div class="beers">
+                            
+                        </div>
+                        <div class="paid_img">
+                                <img src="img/creditcard.svg">
+                        </div>
+                 </div>
+            </template>
+
+
+        <template id="storage_template">
+            <div class="storage_wrapper">
+                <h2 class="storage_name"></h2>
+                <p class="storage_mount"></p>
+                <div class="storage_box">
+                    <img src="">
+                </div>
+                <div class="storage_now">ORDER</div>
+            </div>
+        </template>
+
+
+        <template id="beertypes_template">
+            <div class="beer_wrapper">
+                <div class="beer_img">
+                    <img src="">
+                </div>
+
+                <div class="beer_info">
+                    <h2 class="beer_name"></h2>
+                    <p class="beer_description"></p>
+                    <div class="beer_details">Details</div>
+                </div>
+            </div>
+
+        </template>
+
+        <template id="tabs_template">
+            
+            <div class="super_tap_wrapper">
+                <div class="bar_wrapper">
+                        <div class="bar">
+                            <div class="bar_indhold"></div>
+                        </div>
+                    </div>
+            
+            <div class="tabs_img">
+                <img src="">
+            </div>
+        </div>
+        </template>
+
+
+               <!-- POP UP VINDU -->
+               <div class="modal_window">
+                    <div class="div_modal_wrapper">
+                        <div class="top_information">
+                                <div class="top_information_img">
+                                        <img src="img/new_type/elhefe.png">
+                                </div>
+                                <div class="beer_info_modal">
+                                        <h2 class="beer_info_name">NAME</h2>
+                                        <div class="bold">Category:<p class="categori">categori</p></div>
+                                        <div class="bold">Alcohol%:<p class="alkoholprocent">Alkohol procent 5.7%</p></div>
+                                        <div class="bold">Popularity:<p class="populær">Popularity</p></div>
+                                        <div class="bold">Pouring Speed:<p class="speed">Speed</p></div>
+                                </div>
+                        </div>
+                        <div>
+                            <h3>Description:</h3>
+                            <div class="bold">Appearence:<p class="appearence">Appearence</p></div><br>
+                            <div class="bold">Aroma:<p class="aroma">Aroma</p></div><br>
+                            <!-- <div class="bold">Flavor:<p class="flavor">Flavor</p></div><br> -->
+                            <div class="bold">Mouthfeel:<p class="mouthfeel">mounthfeel</p></div><br>
+                        </div>
+                        <div class="luk">Luk</div>
+                    </div>
+                </div>
+
+
+<!-- This is the script, that picks up the data for the exam project -->
+     <script src="http://petlatkea.dk/2018/front/foobar.js"></script> 
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

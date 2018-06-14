@@ -1,0 +1,107 @@
+/* MOBILE LANDSCAPE */
+@media only screen and (min-width: 376px) { }
+
+
+
+/* IPAD PORTRAIT */
+@media only screen and (min-width: 668px) { }
+
+
+
+/* IPAD LANDSCAPE  */
+@media only screen and (min-width: 769px) { }
+
+
+
+/* DESKTOP */ 
+@media only screen and (min-width: 1025px) {
+
+    .burger-menu--closed {
+        display: none; 
+    }
+
+    #dashboard_container {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+    }
+
+    #menu_info {
+        display: block;
+        width: 280px;
+        position: relative; 
+        box-shadow: $boxShadowRight;
+ 
+        grid-column: 1/2;
+
+        .menu_text_wrapper {
+            margin-top: 90px;
+        }
+
+    }
+
+    .top_nav {
+       
+        .indhold_nav_top {
+            height: 100px;
+            padding-left: 0;
+        }
+    }
+
+    #dashboard_wrapper {
+        padding: 25px;
+        grid-column: 2/3;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    .que_grid_wrapper {
+        grid-column: 1/3;
+    }
+      
+    .tabs_grid_wrapper {
+        grid-column: 2/4;
+    }
+    
+    .beer_grid_wrapper {
+        grid-column: 1/4;
+    }
+
+    #beerInfo_reciever {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 25px;
+    }
+
+    .message_grid_wrapper {
+        grid-column: 1/2;
+    }
+
+    .storage_grid_wrapper {
+    grid-column: 2/4;
+
+        #storage_reciever {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 15px;
+        }
+
+    }
+
+
+        
+                .modal_order_kegs {
+                    width: 600px;
+                    height: 200px;
+                    border-radius: 10px;
+                    
+                }
+
+}
+
+
+
+/* LARGE DESKTOP */
+@media only screen and (min-width: 1200px) { }
+

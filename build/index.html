@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+    <!-- Loading Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:400,700" rel="stylesheet">
+
+    <!-- Loading font-awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div id="login_background">
+    
+            <div id="login_box">
+                <div class="foobar_logo"></div>
+                
+                <h4>Sign in</h4>
+                <div id="login_info">
+                    <div class="username">
+                        <div class="login_icon"><i class="far fa-user"></i></div>
+                        <input placeholder="Username">
+                    </div>
+                    <div class="password">
+                        <div class="login_icon"><i class="fas fa-unlock-alt"></i></div>
+                        <input type="password" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="submit">Log In</div>
+
+                <div class="spinner"></div> 
+                
+                <div class="done">
+                        <i class="fas fa-check"></i>
+                </div>
+
+                <div class="viewDashboard"><a href="dashboard.html">View Dashboard</a></div>
+
+            </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    
+    document.querySelector(".submit").addEventListener("click", function(){
+        console.log("Knappen er klikket!");
+
+        // Remove login content
+        document.querySelector("h4").style.display = "none";
+        document.querySelector("#login_info").style.display = "none";
+        document.querySelector(".submit").style.display = "none";
+
+
+        // Add progress bar
+        document.querySelector(".spinner").style.display = "block";
+
+
+        setTimeout(function(){
+            document.querySelector(".spinner").style.display = "none";
+            
+            document.querySelector(".done").style.display = "block";
+            document.querySelector(".viewDashboard").style.display = "block";
+
+        },5000);
+
+        });
+    
+    </script>
+
+</body>
+</html>

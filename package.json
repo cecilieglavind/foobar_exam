@@ -1,0 +1,24 @@
+{
+  "name": "thefoobar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass source/css/style.scss build/css/style.css -w",
+    "concat-css": "cat build/temp_css/*.css > build/css/all.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milwaukey/foobar_eksamen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Milwaukey/foobar_eksamen/issues"
+  },
+  "homepage": "https://github.com/Milwaukey/foobar_eksamen#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
